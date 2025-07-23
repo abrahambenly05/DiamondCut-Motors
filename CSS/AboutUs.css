@@ -1,0 +1,409 @@
+body {
+    background-color: #008DDA;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: Optima, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #CDFCF6;
+    padding: 15px 70px;
+    transition: 0.1s;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    color: #121481;
+    font-size: 45px;
+    font-family: URW Chancery L, cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #3652AD;
+    padding: 11px 20px;
+}
+
+.navbar a:hover {
+    color: #219C90
+}
+
+.content {
+    margin-top: 95px;
+    padding: 20px;
+    text-align: left;
+    color: #074173;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+section {
+    padding: 4.5rem 0 1.5rem;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -55px;
+}
+
+.list {
+    display: flex;
+    padding: 0 10%;
+    transition: transform 0.5s ease;
+}
+
+.list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item {
+    flex: 0 0 100%;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 80%;
+    text-align: justify;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.text h2 {
+    font-weight: bold;
+    color: #FF9EAA;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text p {
+    color: #FF9EAA;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .buttons {
+        top: auto;
+        bottom: 20px; 
+        right: 50%; 
+        transform: translateX(50%); 
+    }
+}
+
+.buttons button {
+    background-color: #10439F;
+    color: aqua;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+}
+
+.dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dots li.active {
+    background-color: #219C90;
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    color: #121481;
+    display: none;
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.vision, .mission {
+    width: 48%;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #121481;
+}
+
+.vision {
+    margin-left: auto;
+    width: 50%;
+}
+
+.mission h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.vision h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.vision p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mission p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.follow-us {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.follow-text {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #074173
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #CDFCF6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #D1D8C5;
+}
+
+footer {
+    background: #1B3C73;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.contain {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 33.3%;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #BBE2EC;
+    font-weight: bold;
+}
+
+.footer-content p {
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+    color: #E9F6FF;
+    font-family: sans-serif;
+}
+
+.footer-content ul {
+    text-align: center;
+}
+
+.links {
+    padding: 0;
+}
+
+.links li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.links li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #C5FFF8;
+    transition-duration: .3s;
+}
+
+.links li:hover::before {
+    width: 70px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: #E9F6FF;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #E9F6FF;
+}
+
+a:hover {
+    color: #1AACAC;
+}
+
+.social-icons i:hover {
+    color: #1AACAC;
+}
+
+.bottom-bar {
+    text-align: justify;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #E9F6FF;
+    margin: 0;
+    font-size: 14px;
+    padding: 7px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 30px; 
+    }
+
+    .navbar { 
+        flex-direction: column;
+        position: absolute;
+        top: 80px; 
+        left: 0;
+        background-color: #CDFCF6;
+        width: 100%;
+        padding: 10px 0;
+        transition: max-height 0.3s ease-out; 
+        max-height: 0; 
+        overflow: hidden;
+    }
+
+    .navbar.active {
+        display: flex;
+        max-height: 300px; 
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .navbar a {
+        padding: 10px 0; 
+        display: block;
+        color: #3652AD;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .bx {
+        font-size: 30px; 
+    }
+}
+
+
+
+
+

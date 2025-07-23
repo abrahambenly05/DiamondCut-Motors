@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/LoginPage.css">
+    <script src ="../Javascript/LoginPage.js" defer></script>
+    <script src="https://kit.fontawesome.com/2037ff63b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">DiamondCut</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="CarsPage.html">Shop</a></li>
+            <li><a href="ShowRoom.html">Showroom</a></li>
+            <li><a href="LoginPage.html">Login</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <h1>Login</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">Reservation Form</div>
+            <form action="" method="GET" id="reserve-form">
+                <div class="form">
+                    <label for="name">Username</label>
+                    <input type="text" name="name" id="name" placeholder="Name"/>
+                    <span id="usernameError" class="error"></span>
+                </div>
+                <div class="form">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email"/>
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div class="form">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="number" name="number" id="phoneNumber" placeholder="Number"/>
+                    <span id="phoneNumberError" class="error"></span>
+                </div>
+                <div class="form">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password"/>
+                    <span id="passwordError" class="error"></span>
+                </div>
+                <div class="form">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password"/>
+                    <span id="confirmPasswordError" class="error"></span>
+                </div>
+                <div class="form">
+                    <input type="checkbox" name="terms" id="terms"/>
+                    <label for="terms">I agree to the terms and services</label>
+                    <span id="termsError" class="error"></span>
+                </div>
+                <button type="button" id="submitBtn">Submit</button>
+            </form>
+        </div>
+        
+        <footer>
+            <div class="contain">
+                <div class="footer-content">
+                    <h3>Quick links</h3>
+                        <ul class="links">
+                            <li><a href="index.html">Home Page</a></li>
+                            <li><a href="AboutUs.html">About</a></li>
+                            <li><a href="CarsPage.html">Shop</a></li>
+                            <li><a href="ShowRoom.html">Showroom</a></li>
+                            <li><a href="LoginPage.html">Login</a></li>
+                        </ul>
+                </div>
+                <div class="footer-content">
+                    <h3>Contact Us</h3>
+                    <p>Email:diamondcut@gmail.com</p>
+                    <p>Phone:+62 811 22334455</p>
+                    <p>Address:Sudirman 100 street</p>
+                </div>
+                <div class="footer-content">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/?locale=id_ID"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://x.com/?lang=id"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://id.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>    
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <p>&copy; 1998 DiamondCut Motors</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
